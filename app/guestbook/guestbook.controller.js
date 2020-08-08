@@ -1,5 +1,5 @@
 const db = require("./");
-const GuestBook = db.guestbook;
+const GuestBook = require("./guestbook.model.js")(db.mongoose);
 
 //Create comment
 exports.create = (req, res) => {

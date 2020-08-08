@@ -6,6 +6,5 @@ mongoose.Promise = global.Promise;
 const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
-db.guestbook = require("./guestbook.model.js")(mongoose);
 
 module.exports = db;
