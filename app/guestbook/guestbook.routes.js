@@ -6,4 +6,6 @@ module.exports = app => {
     router.post("/", guestbooks.create);
 
     router.get("/", guestbooks.findAll);
+
+    app.use('/api/guestbooks', router);
 };
